@@ -1,1 +1,24 @@
-<p>form-estado-cuenta works!!!!</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form class="mt-5 ml-5 mf-5" [formGroup]="formCuenta" (ngSubmit)="consultaCuenta()" novalidate>
+                <h3 class="text-center">Información del cliente</h3>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="apellido" placeholder="name@example.com" name="apellido" formControlName="apellido">
+                  <label for="apellido">Primer apellido</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="importe" placeholder="importe"  name="importe" formControlName="importe">
+                  <label for="importe">Importa del pago</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="date" class="form-control" id="nacimiento" placeholder="nacimiento" name="nacimiento" formControlName="fechaNacimiento">
+                  <label for="nacimiento">Fecha de nacimiento</label>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</div>

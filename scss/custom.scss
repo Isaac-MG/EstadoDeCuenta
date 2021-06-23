@@ -1,0 +1,19 @@
+////////////////
+///colores
+////////////////
+$principal: #5263B5;
+
+//////////////
+///variables
+///////////////
+$primary: $principal;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//////////
+////estilos formulario
+/////////
+.form-control {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
